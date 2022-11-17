@@ -1,4 +1,4 @@
---Question 1
+--Self Join
 SELECT
     e.firstname || ' ' || e.lastname AS employee,
     m.firstname || ' ' || m.lastname AS manager
@@ -9,7 +9,7 @@ ORDER BY employee;
 
 
 
---Question 2
+--Partition, Dense_Rank
 SELECT 
 	id,
 	salary,
@@ -24,7 +24,7 @@ WHERE dr = 1;
 
 
 
---Question 3
+--Table transformation
 --Transform from item_sold_a into item_sold_b
 SELECT date_sk, 
 	'a' as item, 
